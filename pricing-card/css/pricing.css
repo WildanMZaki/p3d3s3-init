@@ -1,0 +1,126 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    line-height: 1.5;
+    padding-block: 2rem;
+}
+
+:root {
+    --color-primary: #2563eb;
+    --color-primary-dark: #1d4ed8;
+    --color-bg-card: #ffffff;
+    --color-text-main: #0f172a;
+    --color-text-muted: #64748b;
+    --color-border: #e2e8f0;
+    --radius-card: 12px;
+    --spacing-gap: 1.5rem;
+}
+
+.container {
+    width: min(100% - 2rem, 1120px);
+    margin-inline: auto;
+}
+
+#pricing-title {
+    text-align: center;
+    font-size: 1.875rem;
+    color: var(--color-text-main);
+    margin-bottom: 2rem;
+}
+
+.pricing-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-gap);
+    align-items: stretch;
+}
+
+@media (min-width: 768px) {
+    .pricing-list {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.price-card {
+    background-color: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-card);
+    padding: 1.75rem;
+    flex: 1 1 0px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.price-card--featured {
+    border: 2px solid var(--color-primary);
+    box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.1);
+}
+
+.badge {
+    align-self: flex-start;
+    background-color: #dbeafe;
+    color: var(--color-primary-dark);
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.25rem 0.625rem;
+    border-radius: 9999px;
+    margin: 0 0 0.5rem 0;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.price-card h3 {
+    margin: 0;
+    font-size: 1.35rem;
+    color: var(--color-text-main);
+}
+
+.price {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    margin-block: 0.5rem 1rem;
+}
+
+.price-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+    flex-grow: 1;
+}
+
+.price-card li {
+    padding-block: 0.375rem;
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: var(--color-primary);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s ease;
+}
+
+.button:hover {
+    background-color: var(--color-primary-dark);
+}
+
+.button:focus-visible {
+    outline: 3px solid var(--color-primary-dark);
+    outline-offset: 3px;
+}
