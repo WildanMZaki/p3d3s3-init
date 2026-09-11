@@ -1,0 +1,141 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+:root {
+    --color-primary: #2563eb;
+    --color-primary-dark: #1d4ed8;
+    --color-bg: #f8fafc;
+    --color-card-bg: #ffffff;
+    --color-text: #1e293b;
+    --color-border: #e2e8f0;
+    --spacing-base: 1rem;
+    --radius-card: 12px;
+}
+
+.container {
+    width: min(100% - 2rem, 1120px);
+    margin-inline: auto;
+}
+
+.site-header {
+    background-color: var(--color-card-bg);
+    border-bottom: 1px solid var(--color-border);
+    padding-block: 1rem;
+    margin-bottom: 2rem;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.brand {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-link {
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: var(--color-primary);
+}
+
+.nav-link:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 4px;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Card Component */
+.card {
+    background-color: var(--color-card-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-card);
+    padding: 1.5rem;
+    flex: 1 1 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.skills-list {
+    padding-left: 1.25rem;
+}
+
+/* Button Component */
+.button {
+    display: inline-block;
+    text-align: center;
+    background-color: var(--color-primary);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+.button:hover {
+    background-color: var(--color-primary-dark);
+}
+
+.button:focus-visible {
+    outline: 3px solid var(--color-primary-dark);
+    outline-offset: 3px;
+}
+
+.site-footer {
+    text-align: center;
+    padding-block: 2rem;
+    margin-top: 3rem;
+    border-top: 1px solid var(--color-border);
+}
+
+.card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .card-list {
+        flex-direction: row;
+        align-items: stretch;
+    }
+}
