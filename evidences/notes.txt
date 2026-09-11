@@ -1,0 +1,5 @@
+Catatan Singkat:
+Tidak banyak bukti fisik file langsung yang bisa saya kumpulkan di sini karena prosesnya sangat menguras waktu untuk menyimpan snapshot dari snipping tool kemudian dipindahkan ke folder evidence ini.
+Mungkin kesalahan saya sendiri seharusnya disetting dari awal.
+Tapi perintah tersurat mengenai folder evidence ini disampaikan di bagian akhir module sehingga tidak terbaca dan tidak bisa disiapkan dari awal. 
+Meskipun begitu, kebanyakan evidence sudah disediakan pada worksheet.
